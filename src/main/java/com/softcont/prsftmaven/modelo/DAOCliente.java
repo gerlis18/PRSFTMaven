@@ -25,7 +25,6 @@ import javax.swing.table.DefaultTableModel;
 public class DAOCliente {
 
     Connection con;
-    Conexion cn;
     VCliente vista;
     ResultSet t;
     PreparedStatement pst;
@@ -43,8 +42,7 @@ public class DAOCliente {
      * @throws IllegalAccessException Throws
      */
     public DAOCliente() throws InstantiationException, IllegalAccessException {
-        cn = new Conexion();
-        con = cn.getConnection();
+        con = Conexion.getConnection();
     }
 
     /**

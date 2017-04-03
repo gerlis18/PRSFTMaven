@@ -34,7 +34,7 @@ public class DAOISesion {
      * @throws IllegalAccessException Throws
      */
     public DAOISesion() throws InstantiationException, IllegalAccessException {
-        con = new Conexion().getConnection();
+        con = Conexion.getConnection();
     }
 
     /**
@@ -101,5 +101,14 @@ public class DAOISesion {
     public String getPass() throws SQLException{
         String Pass = rs.getString("contraseña");
         return Pass;
+    }
+    
+    public void cerrarConexion(){
+        try {
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(DAOISesion.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Error al cerrar la conexion");
+        }
     }
 }

@@ -24,15 +24,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public final class InvCompras extends javax.swing.JPanel {
 
-    Conexion con;
     private final transient Connection connection;
     private transient PreparedStatement pst;
     private transient ResultSet rs;
 
     
     public InvCompras() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        connection = con.getConnection();
+        connection = Conexion.getConnection();
         initComponents();
         cargar();
         jTable1.setDefaultRenderer(Object.class, new MyRendererColor());

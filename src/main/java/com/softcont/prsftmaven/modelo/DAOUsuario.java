@@ -28,7 +28,6 @@ import javax.swing.JTextField;
 public class DAOUsuario {
 
     Connection cn;
-    Conexion con;
     VUsuario vista;
     PreparedStatement pst;
     ResultSet rs;
@@ -46,8 +45,7 @@ public class DAOUsuario {
      * @throws IllegalAccessException Throws
      */
     public DAOUsuario() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
         vista = new VUsuario();
     }
 
@@ -76,9 +74,9 @@ public class DAOUsuario {
                 txttelefono.setText(rs.getString("telefono"));
 
                 if (vista.jCrol.getSelectedItem().equals("Administrador")) {
-                    vista.icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prsft/imagenes/usuario/x128-administador.png")));
+                    vista.icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x128-administador.png")));
                 } else {
-                    vista.icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prsft/imagenes/usuario/x128-user.png")));
+                    vista.icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x128-user.png")));
                 }
             }
         } catch (SQLException ex) {

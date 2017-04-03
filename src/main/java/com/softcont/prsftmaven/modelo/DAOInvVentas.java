@@ -36,8 +36,7 @@ public class DAOInvVentas {
      * @throws IllegalAccessException Throws
      */
     public DAOInvVentas() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
     }
 
     /**

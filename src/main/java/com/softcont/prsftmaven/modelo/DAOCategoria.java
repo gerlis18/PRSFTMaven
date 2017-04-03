@@ -35,8 +35,7 @@ public class DAOCategoria {
     final String SQL_DELETE = "delete  from categoria where nombreCategoria=?";
 
     public DAOCategoria() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
     }
 
     /**

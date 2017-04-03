@@ -25,7 +25,6 @@ import javax.swing.table.DefaultTableModel;
 public class DAOProveedor {
 
     Connection con;
-    Conexion cn;
     ResultSet rs;
     PreparedStatement pst;
 
@@ -43,8 +42,7 @@ public class DAOProveedor {
      * @throws IllegalAccessException Throws
      */
     public DAOProveedor() throws InstantiationException, IllegalAccessException {
-        cn = new Conexion();
-        con = cn.getConnection();
+        con = Conexion.getConnection();
     }
 
     /**

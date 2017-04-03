@@ -27,7 +27,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class DAOVenta {
 
-    Conexion con;
     Connection cn;
     PreparedStatement pst;
     ResultSet rs;
@@ -42,8 +41,7 @@ public class DAOVenta {
     final String SQL_UPDATE = "UPDATE factura SET estadoFactura = 'Anulado' where numFactura = ?";
     final String SQL_SEARCH3 = "SELECT `nomProducto` FROM productos WHERE `nomProducto` LIKE CONCAT(?,'%');";
     public DAOVenta() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
     }
 
     /**

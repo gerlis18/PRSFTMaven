@@ -20,7 +20,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public final class InvProductos extends javax.swing.JPanel {
 
-    Conexion cn;
     private final transient Connection con;
     private transient PreparedStatement pst;
     private transient ResultSet rs;
@@ -37,8 +36,7 @@ public final class InvProductos extends javax.swing.JPanel {
      */
     public InvProductos() throws InstantiationException, IllegalAccessException, SQLException {
         initComponents();
-        cn = new Conexion();
-        con = cn.getConnection();
+        con = Conexion.getConnection();
         cargar();
     }
 

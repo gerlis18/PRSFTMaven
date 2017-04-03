@@ -69,7 +69,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnProductos.setBorder(null);
         btnProductos.setBorderPainted(false);
         btnProductos.setContentAreaFilled(false);
-        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProductos.setFocusPainted(false);
         btnProductos.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x64-productos_press.png"))); // NOI18N
         btnProductos.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnClientes.setBorder(null);
         btnClientes.setBorderPainted(false);
         btnClientes.setContentAreaFilled(false);
-        btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnClientes.setFocusPainted(false);
         btnClientes.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x64-clientes_press.png"))); // NOI18N
         btnClientes.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +101,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnUsuarios.setBorder(null);
         btnUsuarios.setBorderPainted(false);
         btnUsuarios.setContentAreaFilled(false);
-        btnUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuarios.setFocusPainted(false);
         btnUsuarios.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x64-info_usuario_press.png"))); // NOI18N
         btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +117,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnCompras.setBorder(null);
         btnCompras.setBorderPainted(false);
         btnCompras.setContentAreaFilled(false);
-        btnCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCompras.setFocusPainted(false);
         btnCompras.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x64-compra_press.png"))); // NOI18N
 
@@ -128,7 +128,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnProveedores.setBorder(null);
         btnProveedores.setBorderPainted(false);
         btnProveedores.setContentAreaFilled(false);
-        btnProveedores.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnProveedores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProveedores.setFocusPainted(false);
         btnProveedores.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x64-proveedores_press.png"))); // NOI18N
 
@@ -175,7 +175,7 @@ public final class VMenu extends javax.swing.JFrame {
         );
         jPaneliLayout.setVerticalGroup(
             jPaneliLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
 
         btnVentas.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -186,7 +186,7 @@ public final class VMenu extends javax.swing.JFrame {
         btnVentas.setBorder(null);
         btnVentas.setBorderPainted(false);
         btnVentas.setContentAreaFilled(false);
-        btnVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnVentas.setFocusPainted(false);
         btnVentas.setFocusable(false);
         btnVentas.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -265,14 +265,14 @@ public final class VMenu extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, "card2");
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prsft/imagenes/principal/x32-ajustes.png"))); // NOI18N
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x32-ajustes.png"))); // NOI18N
         jMenu2.setText("Cuenta");
 
         jMCambiarPw.setText("Cambiar Contraseña");
         jMenu2.add(jMCambiarPw);
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F10, 0));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prsft/imagenes/principal/x16-salida.png"))); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/x16-salida.png"))); // NOI18N
         jMenuItem1.setText("Cerrar Sesion");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

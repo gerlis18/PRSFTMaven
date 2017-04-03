@@ -29,7 +29,6 @@ import com.softcont.prsftmaven.vista.VCompra;
 public class DAOcompras {
 
     Connection con;
-    Conexion cn;
     VCompra vista;
     PreparedStatement pst;
     ResultSet rs;
@@ -39,8 +38,7 @@ public class DAOcompras {
     String SQL_SEARCH_PRODS = "SELECT * from detallecompra";
 
     public DAOcompras() throws InstantiationException, IllegalAccessException {
-        cn = new Conexion();
-        con = cn.getConnection();
+        con = Conexion.getConnection();
         //vista = new VCompra();
     }
 

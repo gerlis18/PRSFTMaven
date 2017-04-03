@@ -82,6 +82,7 @@ public class ControladorISesion implements ActionListener{
         }
         
         if (e.getSource()==vista.btnSalir) {
+            modelo.cerrarConexion();
             System.exit(0);
         }
         

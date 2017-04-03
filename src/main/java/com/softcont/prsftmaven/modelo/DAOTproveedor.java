@@ -31,8 +31,7 @@ public class DAOTproveedor {
      * @throws IllegalAccessException Throws 
      */
     public DAOTproveedor() throws InstantiationException, IllegalAccessException {
-        cn = new Conexion();
-        con = cn.getConnection();
+        con = Conexion.getConnection();
     }
 
     /**

@@ -24,7 +24,6 @@ import com.softcont.prsftmaven.vista.VProductos;
  */
 public class DAOProducto {
 
-    Conexion conect;
     Connection con;
     VProductos vistaProductos;
     PreparedStatement pst;
@@ -48,8 +47,7 @@ public class DAOProducto {
      * @throws IllegalAccessException Throws 
      */
     public DAOProducto() throws InstantiationException, IllegalAccessException {
-        conect = new Conexion();
-        con = conect.getConnection();
+        con = Conexion.getConnection();
     }
 
     /**

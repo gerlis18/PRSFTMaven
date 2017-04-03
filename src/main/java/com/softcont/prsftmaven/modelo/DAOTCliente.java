@@ -23,7 +23,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class DAOTCliente {
 
-    Conexion con;
     Connection cn;
     PreparedStatement pst;
     ResultSet rs;
@@ -31,8 +30,7 @@ public class DAOTCliente {
     final String SQL_SEARCH = "SELECT * FROM cliente";
     
     public DAOTCliente() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
     }
 
     /**

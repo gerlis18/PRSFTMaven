@@ -35,8 +35,7 @@ public class DAOInvCompras {
      * @throws IllegalAccessException Throws 
      */
     public DAOInvCompras() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
     }
     /**
      * Metodo encargado de anular compras 

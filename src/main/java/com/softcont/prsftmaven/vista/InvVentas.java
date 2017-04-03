@@ -26,14 +26,12 @@ import javax.swing.table.TableColumn;
  */
 public final class InvVentas extends javax.swing.JPanel{
 
-    Conexion con;
     private final transient Connection cn;
     private transient PreparedStatement pst;
     private transient ResultSet rs;
 
     public InvVentas() throws InstantiationException, IllegalAccessException {
-        con = new Conexion();
-        cn = con.getConnection();
+        cn = Conexion.getConnection();
         initComponents();
         cargar();
         jTable1.setDefaultRenderer(Object.class, new MyRendererColor());
